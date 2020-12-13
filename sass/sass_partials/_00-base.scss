@@ -1,0 +1,91 @@
+
+
+/* ==========================================================================
+  MEDIA QUERY MANAGER
+========================================================================== */
+
+$breakpoint-smartphone: 400px;
+$breakpoint-tablet:   768px;
+$breakpoint-laptop:   950px;
+$breakpoint-desktop:  1200px;
+$breakpoint-desktop-large: 1201px;
+
+
+@mixin respond($breakpoint)  {
+  @if $breakpoint == phone {
+    @media (max-width: $breakpoint-smartphone) { @content};
+    // MAX = 400px;
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) { @content};
+    // MAX = 400px
+  }
+  @if $breakpoint == laptop {
+    @media (max-width: $breakpoint-laptop) { @content};
+    // MAX = 950px
+  }
+  @if $breakpoint == min-desktop {
+    @media (min-width: $breakpoint-laptop) { @content};
+  }
+  @if $breakpoint == desktop {
+    @media (max-width: $breakpoint-desktop) { @content};
+    // MAX = 1200px
+  }
+  @if $breakpoint == desktop-large {
+    @media (min-width: $breakpoint-desktop-large) { @content};
+    // MIN = 1200px
+  }
+}
+
+
+
+/* ==========================================================================
+  COLOR VARIABLES
+========================================================================== */
+
+// ###### FONT COLORS
+
+$color-body-background: #F8F8F8;
+
+
+
+/* ==========================================================================
+  FONT VARIABLES
+========================================================================== */
+
+$font-family: 'Montserrat', sans-serif;
+
+$font-size-p-sm: 1rem;
+$font-size-p-lg: 1.25rem;
+
+$line-height-p-sm: 1.5;
+$line-height-p-lg: 1.7;
+
+$letter-spacing: 1px;
+
+
+
+/* ==========================================================================
+  BASIC BODY STYLING
+========================================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-body-background;
+  font-family: $font-family;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  @include respond(laptop) {
+  }
+
+  @include respond(tablet) {
+  }
+
+  @include respond(phone) {
+  }
+}
