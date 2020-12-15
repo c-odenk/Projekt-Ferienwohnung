@@ -12,16 +12,13 @@ header {
   justify-content: space-between;
 
   & .header_logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2rem;
   }
 
   & nav {
+    align-self: center;
 
     & ul {
       margin: 0;

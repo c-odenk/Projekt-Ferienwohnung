@@ -56,26 +56,25 @@ header {
   flex-direction: row;
   justify-content: space-between; }
   header .header_logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2rem; }
-  header nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row; }
-    header nav ul li {
-      margin: 0 0 0 25px;
+  header nav {
+    align-self: center; }
+    header nav ul {
+      margin: 0;
       padding: 0;
-      list-style: none;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
-      header nav ul li a {
-        text-decoration: none;
-        color: #000; }
+      display: flex;
+      flex-direction: row; }
+      header nav ul li {
+        margin: 0 0 0 25px;
+        padding: 0;
+        list-style: none;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+        header nav ul li a {
+          text-decoration: none;
+          color: #000; }
 
 /* ==========================================================================
   LANDING WALLPAPER STYLING
@@ -124,9 +123,9 @@ header {
   background-color: #F0F0F0;
   padding: 60px; }
   .landing-service_col-1 {
-    width: 55%; }
+    width: 52%; }
     .landing-service_col-1 h1 {
-      margin: 0 0 20px 0; }
+      margin: 0 0 30px 0; }
     .landing-service_col-1 p {
       line-height: 1.9;
       letter-spacing: 1px;
@@ -151,9 +150,45 @@ header {
       background-color: #009900; }
 
 /* ==========================================================================
+  LANDING TESTIMONIAL STYLING
+========================================================================== */
+.landing-testimonials {
+  width: 100%;
+  background-color: #009900;
+  margin: 0;
+  padding: 10vh 0; }
+  .landing-testimonials_row {
+    width: 35%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    .landing-testimonials_row .testimonial {
+      width: 100%;
+      height: 150px;
+      background-color: white; }
+      .landing-testimonials_row .testimonial:not(:last-child) {
+        margin: 0 0 30px 0; }
+
+/* ==========================================================================
   FOOTER STYLING
 ========================================================================== */
 footer {
   width: 100%;
-  height: 200px;
-  background-color: orange; }
+  margin: 2.5vh 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+  footer nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0; }
+    footer nav ul li {
+      margin: 0 0 0 25px;
+      padding: 0;
+      list-style: none;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+      footer nav ul li a {
+        text-decoration: none;
+        color: #000; }
