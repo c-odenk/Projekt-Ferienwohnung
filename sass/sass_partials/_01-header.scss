@@ -7,22 +7,39 @@
 header {
   width: 100%;
   padding: 20px 0;
-  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-  & ul {
-    margin: 0;
-    padding: 0;
+  & .header_logo {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
-    & li {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  & nav {
+
+    & ul {
       margin: 0;
       padding: 0;
-      list-style: none;
+      display: flex;
+      flex-direction: row;
 
-      & a {
-        text-decoration: none;
+      & li {
+        margin: 0 0 0 25px;
+        padding: 0;
+        list-style: none;
+        text-transform: uppercase;
+        letter-spacing: $letter-spacing;
 
+        & a {
+          text-decoration: none;
+          color: $color-text-dark;
+        }
       }
     }
   }

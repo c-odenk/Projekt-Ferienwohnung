@@ -4,6 +4,10 @@
 /* ==========================================================================
   MEDIA QUERY MANAGER
 ========================================================================== */
+/*
+**  Desktop first approach = Desktop Styling zuerst und dann Mobile Styling
+**  mit (max-width) Styling properties !!!
+*/
 /* ==========================================================================
   COLOR VARIABLES
 ========================================================================== */
@@ -17,11 +21,30 @@ html {
   scroll-behavior: smooth; }
 
 body {
+  box-sizing: border-box;
   background-color: #F8F8F8;
   font-family: "Montserrat", sans-serif;
-  padding: 0;
+  width: 100%;
   margin: 0;
-  width: 100%; }
+  padding: 1% 3% 0 3%;
+  /*
+  @if $breakpoint == desktop {
+    @media (max-width: $breakpoint-desktop) { @content};
+    // MIN = 1200px
+  }
+  */
+  /*
+  @if $breakpoint == desktop {
+    @media (max-width: $breakpoint-desktop) { @content};
+    // MIN = 1200px
+  }
+  */
+  /*
+  @if $breakpoint == desktop {
+    @media (max-width: $breakpoint-desktop) { @content};
+    // MIN = 1200px
+  }
+  */ }
 
 /* ==========================================================================
   HEADER STYLING
@@ -29,26 +52,38 @@ body {
 header {
   width: 100%;
   padding: 20px 0;
-  background-color: yellow; }
-  header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  header .header_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem; }
+  header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row; }
-    header ul li {
-      margin: 0;
+    header nav ul li {
+      margin: 0 0 0 25px;
       padding: 0;
-      list-style: none; }
-      header ul li a {
-        text-decoration: none; }
+      list-style: none;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+      header nav ul li a {
+        text-decoration: none;
+        color: #000; }
 
 /* ==========================================================================
   LANDING WALLPAPER STYLING
 ========================================================================== */
 .wallpaper {
   width: 100%;
-  height: 500px;
-  background-color: red;
+  height: 600px;
+  background-color: #009900;
   margin: 0;
   padding: 0; }
 
@@ -56,11 +91,64 @@ header {
   LANDING INFO STYLING
 ========================================================================== */
 .landing-info {
-  width: 100%;
-  height: 400px;
-  background-color: blue; }
-  .landing-info_col-1 h1 {
-    margin: 0; }
+  width: 80%;
+  margin: 15vh 10vw;
+  display: flex;
+  flex-direction: row; }
+  .landing-info_col-1 {
+    width: 45%; }
+    .landing-info_col-1 h1 {
+      margin: 0 0 30px 0;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+    .landing-info_col-1 h2 {
+      margin: 35px 0 15px 0;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+    .landing-info_col-1 p {
+      line-height: 1.9;
+      letter-spacing: 1px;
+      text-align: justify; }
+    .landing-info_col-1 a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      margin: 25px 0 0 0; }
+
+/* ==========================================================================
+  LANDING SERVICE STYLING
+========================================================================== */
+.landing-service {
+  display: flex;
+  flex-direction: row;
+  background-color: #F0F0F0;
+  padding: 60px; }
+  .landing-service_col-1 {
+    width: 55%; }
+    .landing-service_col-1 h1 {
+      margin: 0 0 20px 0; }
+    .landing-service_col-1 p {
+      line-height: 1.9;
+      letter-spacing: 1px;
+      text-align: justify; }
+
+/* ==========================================================================
+  LANDING APPARTMENTS STYLING
+========================================================================== */
+.landing-appartments {
+  width: 80%;
+  margin: 15vh 10vw; }
+  .landing-appartments h1 {
+    width: 100%; }
+  .landing-appartments_row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .landing-appartments_row .appartment {
+      width: 47.5%;
+      height: 400px;
+      background-color: #009900; }
 
 /* ==========================================================================
   FOOTER STYLING

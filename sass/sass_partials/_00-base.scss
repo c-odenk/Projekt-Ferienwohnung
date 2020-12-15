@@ -4,36 +4,29 @@
   MEDIA QUERY MANAGER
 ========================================================================== */
 
-$breakpoint-smartphone: 400px;
-$breakpoint-tablet:   768px;
-$breakpoint-laptop:   950px;
-$breakpoint-desktop:  1200px;
-$breakpoint-desktop-large: 1201px;
+/*
+**  Desktop first approach = Desktop Styling zuerst und dann Mobile Styling
+**  mit (max-width) Styling properties !!!
+*/
 
+// $breakpoint-desktop:  1200px;
+$breakpoint-smartphone: 767px;
+$breakpoint-tablet:    1029px;
 
 @mixin respond($breakpoint)  {
-  @if $breakpoint == phone {
-    @media (max-width: $breakpoint-smartphone) { @content};
-    // MAX = 400px;
-  }
-  @if $breakpoint == tablet {
-    @media (max-width: $breakpoint-tablet) { @content};
-    // MAX = 400px
-  }
-  @if $breakpoint == laptop {
-    @media (max-width: $breakpoint-laptop) { @content};
-    // MAX = 950px
-  }
-  @if $breakpoint == min-desktop {
-    @media (min-width: $breakpoint-laptop) { @content};
-  }
+  /*
   @if $breakpoint == desktop {
     @media (max-width: $breakpoint-desktop) { @content};
-    // MAX = 1200px
-  }
-  @if $breakpoint == desktop-large {
-    @media (min-width: $breakpoint-desktop-large) { @content};
     // MIN = 1200px
+  }
+  */
+  @if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) { @content};
+    // MAX = 1029px
+  }
+  @if $breakpoint == phone {
+    @media (max-width: $breakpoint-smartphone) { @content};
+    // MAX = 767px;
   }
 }
 
@@ -46,6 +39,8 @@ $breakpoint-desktop-large: 1201px;
 // ###### FONT COLORS
 
 $color-body-background: #F8F8F8;
+
+$color-text-dark: #000;
 
 
 
@@ -74,13 +69,15 @@ html {
 }
 
 body {
+  box-sizing: border-box;
   background-color: $color-body-background;
   font-family: $font-family;
-  padding: 0;
-  margin: 0;
   width: 100%;
+  margin: 0;
+  padding: 1% 3% 0 3%;
 
-  @include respond(laptop) {
+  @include respond(desktop) {
+
   }
 
   @include respond(tablet) {
