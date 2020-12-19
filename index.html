@@ -12,6 +12,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
   </head>
   <body>
 
@@ -21,13 +24,13 @@
 
   <header>
     <div class="header_logo">
-      Platzhalter
+      Ferienwohnungen Odenkirchen
     </div>
     <nav class="header_nav">
       <ul>
-        <li><a href="#"> Start </a></li>
-        <li><a href="#"> Ahrtal </a></li>
-        <li><a href="#"> Unterkünfte </a></li>
+        <li><a href="index.html"> Startseite </a></li>
+        <li><a href="#ahrtal"> Ahrtal </a></li>
+        <li><a href="#ferienwohnungen"> Unterkünfte </a></li>
         <li><a href="#"> Kontakt </a></li>
       </ul>
     </nav>
@@ -38,14 +41,17 @@
   <!-- ####                                  WALLPAPER                                     #### -->
 
   <div class="wallpaper">
-
+    <div class="wallpaper-heading">
+      <h1> Urlaub im Ahrtal </h1>
+      <h2> - Wein, Wandern, Wellness - </h2>
+    </div>
   </div>
 
 
   <!-- ######################################################################################## -->
   <!-- ####                                  LANDING - INFO                                #### -->
 
-  <div class="landing-info">
+  <div class="landing-info" id="ahrtal">
     <div class="landing-info_col-1">
       <h1> Urlaub im Ahrtahl ... </h1>
       <p> ... das ist Urlaub im Rotweinparadies! <br>
@@ -58,9 +64,14 @@
           Mittelpunkt </p>
       <p> Ahrweiler mit seinen romantischen Fachwerkhäusern und seiner komplett erhaltenen mittelalterlichen Stadtmauer und den
           traditionellen Weinwirtschaften bidlet dazu den Gegensatz. <small> (Textquelle: Ahrtaltourismus) </small> </p>
-      <a href="#"> Erfahre mehr </a>
+      <a target="_blank" href="https://www.ahrtal.de/"><i class="fas fa-arrow-right"></i> Erfahre mehr </a>
     </div>
     <div class="landing-info_col-2">
+      <div class="landing-info_col-2_row">
+        <img src="img/Uferlichter.jpg">
+        <img src="img/Spielbank.jpg">
+        <img src="img/Ahrtor.jpg">
+      </div>
     </div>
   </div>
 
@@ -68,7 +79,7 @@
   <!-- ######################################################################################## -->
   <!-- ####                                  LANDING - SERVICES                            #### -->
 
-  <div class="landing-service">
+  <div class="landing-service" id="ferienwohnungen">
     <div class="landing-service_col-1">
       <h1> Unsere Ferienwohnungen </h1>
       <p> Moderne, ruhige Ferienwohnungen in hervorragender Lage von Bad Neuenahr-Ahrweiler. <br>
@@ -79,6 +90,16 @@
           Schlüsselübergabe </p>
     </div>
     <div class="landing-service_col-2">
+      <div class="landing-service_col-2_row">
+        <div class="item">
+          <h2> Service </h2>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
     </div>
   </div>
 
@@ -88,8 +109,47 @@
 
   <div class="landing-appartments">
     <div class="landing-appartments_row">
-      <div class="appartment"></div>
-      <div class="appartment"></div>
+
+      <a href="#">
+        <div class="appartment">
+          <div class="appartment_image-gallery">
+            <div class="img-big">
+              <img src="https://cf.bstatic.com/images/hotel/max1024x768/134/134497022.jpg">
+            </div>
+            <div class="img-small">
+              <img src="https://cf.bstatic.com/images/hotel/max1024x768/134/134497018.jpg">
+            </div>
+            <div class="img-small">
+              <img src="https://cf.bstatic.com/images/hotel/max1024x768/134/134497016.jpg">
+            </div>
+          </div>
+          <div class="appartment_text">
+            <h2> Ferienwohnung Elisabeth </h2>
+            <p> Ravensbergerstraße 21b, 53474 Bad Neuenahr-Ahrweiler </p>
+          </div>
+        </div>  <!-- #### Appartment Groß #### -->
+      </a>
+
+      <a href="#">
+        <div class="appartment">
+          <div class="appartment_image-gallery">
+            <div class="img-big">
+              <img src="https://a0.muscache.com/im/pictures/81d28d64-6ddd-43bf-9ef6-b4c70512e286.jpg?im_w=1200">
+            </div>
+            <div class="img-small">
+              <img src="https://a0.muscache.com/im/pictures/a0d27aad-45ff-45f6-8221-e44016a97c72.jpg?im_w=1440">
+            </div>
+            <div class="img-small">
+              <img src="https://cf.bstatic.com/images/hotel/max1024x768/134/134497016.jpg">
+            </div>
+          </div>
+          <div class="appartment_text">
+            <h2> Ferienwohnung Hedwig </h2>
+            <p> Ravensbergerstraße 21b, 53474 Bad Neuenahr-Ahrweiler </p>
+          </div>
+        </div>  <!-- #### Appartment klein #### -->
+      </a>
+
     </div>
   </div>
 
@@ -98,21 +158,65 @@
   <!-- ####                                  LANDING - TESTIMONIALS                        #### -->
 
   <div class="landing-testimonials">
+    <video autoplay muted loop>
+      <source src="video/Weinberg.mp4" type="video/mp4">
+    </video>
     <div class="landing-testimonials_row">
-      <div class="testimonial"></div>
-      <div class="testimonial"></div>
-      <div class="testimonial"></div>
+      <div class="testimonial">
+        <div class="testimonial_col-1">
+          <img src="img/Benjamin.jpg">
+        </div>
+        <div class="testimonial_col-2">
+          <h2> Benjamin <small> (2017 über AirBnB) </small></h2>
+          <p> Wir haben uns wirklich sehr wohl gefühlt. Die Wohnung war sehr sauber und freundlich.
+              Fußläufig ist in wenigen Minuren wirklich alles zu erreichen.
+              Ein freundlicher Kontakt zum Vermieter rundet das ganze ab. Immer wieder gerne. </p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial_col-1">
+          <img src="img/Andrei.png">
+        </div>
+        <div class="testimonial_col-2">
+          <h2> Andrei <small> (2017 über AirBnB) </small></h2>
+          <p>Thank you, Christopher! It was a great time to stay at your place. Everything
+              was at the top level. I and my wife really enjoyed your cozy appartment and the
+              great location.</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial_col-1">
+          <img src="img/NoPicture.jpg">
+        </div>
+        <div class="testimonial_col-2">
+          <h2> Ralf <small> (2019 über Booking.com) </small></h2>
+          <p> Die Ferienwohnung war sehr sauber, sehr gut ausgestattet, und geschmackvoll
+              eingerichtet. Der Kontakt mit der Vermieterin war sehr nett, und die Übergabe des
+              Schlüssels erfolgte pünktlich zur abgesprochenen Uhrzeit.</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial_col-1">
+          <img src="img/NoPicture.jpg">
+        </div>
+        <div class="testimonial_col-2">
+          <h2> Armin <small> (2018 über Booking.com) </small></h2>
+          <p>Lage abseits der Straße,sehr ruhig! Trotzdem zentral. Geschmackvolle, durchdachte +
+              moderne Einrichtung mit netten Details + sehr gepflegt. Schöne Aussensitzgelegenheit.
+              Eigener Zugang. Nette Vermieterin.</p>
+        </div>
+      </div>
     </div>
   </div>
 
 
   <!-- ######################################################################################## -->
-  <!-- ####                                  LANDING - FOOTER                              #### -->
+  <!-- ####                                   FOOTER                                       #### -->
 
   <footer>
     <nav class="footer_nav">
       <ul>
-        <li><a href="#"> Startseite </a></li>
+        <li><a href="index.html"> Startseite </a></li>
         <li><a href="#"> Hausordnung </a></li>
         <li><a href="#"> Impressum </a></li>
       </ul>

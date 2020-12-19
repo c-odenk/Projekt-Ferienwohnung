@@ -81,17 +81,40 @@ header {
 ========================================================================== */
 .wallpaper {
   width: 100%;
-  height: 600px;
+  height: 70vh;
   background-color: #009900;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  position: relative;
+  background-image: url("https://img0.oastatic.com/img2/24975506/max/ahrweiler-mit-rotweinwanderweg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .wallpaper-heading {
+    padding: 50px 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    backdrop-filter: blur(4px);
+    color: #F8F8F8; }
+    .wallpaper-heading h1 {
+      margin: 0 0 10px 0;
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .wallpaper-heading h2 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px; }
 
 /* ==========================================================================
   LANDING INFO STYLING
 ========================================================================== */
 .landing-info {
   width: 80%;
-  margin: 15vh 10vw;
+  margin: 17.5vh 10vw;
   display: flex;
   flex-direction: row; }
   .landing-info_col-1 {
@@ -112,7 +135,33 @@ header {
       display: block;
       text-decoration: none;
       color: #000;
+      letter-spacing: 1px;
       margin: 25px 0 0 0; }
+  .landing-info_col-2 {
+    width: 45%;
+    align-items: center;
+    position: relative; }
+    .landing-info_col-2_row {
+      width: 100%;
+      align-items: center; }
+      .landing-info_col-2_row img {
+        width: 360px;
+        height: 220px;
+        position: absolute;
+        box-shadow: 10px 20px 20px #888888;
+        transition: .3s all; }
+        .landing-info_col-2_row img:nth-of-type(1) {
+          top: 10%;
+          left: 30%; }
+        .landing-info_col-2_row img:nth-of-type(2) {
+          top: 20%;
+          left: 65%; }
+        .landing-info_col-2_row img:nth-of-type(3) {
+          top: 40%;
+          left: 47.5%; }
+        .landing-info_col-2_row img:hover {
+          z-index: 999;
+          transform: scale(1.05); }
 
 /* ==========================================================================
   LANDING SERVICE STYLING
@@ -120,61 +169,148 @@ header {
 .landing-service {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-color: #F0F0F0;
   padding: 60px; }
   .landing-service_col-1 {
     width: 52%; }
     .landing-service_col-1 h1 {
-      margin: 0 0 30px 0; }
+      margin: 0 0 30px 0;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
     .landing-service_col-1 p {
       line-height: 1.9;
       letter-spacing: 1px;
       text-align: justify; }
+  .landing-service_col-2 {
+    width: 40%;
+    align-self: center; }
+    .landing-service_col-2_row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .landing-service_col-2_row .item {
+        width: 30%;
+        height: 120px;
+        background-color: red;
+        margin: 0 0 20px 0; }
 
 /* ==========================================================================
   LANDING APPARTMENTS STYLING
 ========================================================================== */
 .landing-appartments {
   width: 80%;
-  margin: 15vh 10vw; }
+  margin: 17.5vh 10vw; }
   .landing-appartments h1 {
-    width: 100%; }
+    width: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
   .landing-appartments_row {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-    .landing-appartments_row .appartment {
-      width: 47.5%;
-      height: 400px;
-      background-color: #009900; }
+    .landing-appartments_row a {
+      width: 46%;
+      text-decoration: none;
+      color: #000; }
+      .landing-appartments_row a .appartment {
+        padding: 0 0 20px 0; }
+        .landing-appartments_row a .appartment_image-gallery {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          grid-template-rows: 3;
+          grid-gap: 15px;
+          transition: .3s all; }
+          .landing-appartments_row a .appartment_image-gallery .img-big {
+            background-color: red;
+            grid-column: 1/2;
+            grid-row: 1/3; }
+            .landing-appartments_row a .appartment_image-gallery .img-big img {
+              width: 100%;
+              height: 100%; }
+          .landing-appartments_row a .appartment_image-gallery .img-small {
+            background-color: yellow;
+            grid-column: 2/3;
+            height: 150px; }
+            .landing-appartments_row a .appartment_image-gallery .img-small img {
+              width: 100%;
+              height: 100%; }
+          .landing-appartments_row a .appartment_image-gallery .img-big, .landing-appartments_row a .appartment_image-gallery .img-small {
+            transition: .3s all; }
+            .landing-appartments_row a .appartment_image-gallery .img-big:hover, .landing-appartments_row a .appartment_image-gallery .img-small:hover {
+              transform: scale(1.05); }
+        .landing-appartments_row a .appartment_text h2 {
+          margin: 10px 0 0 0;
+          line-height: 1.9;
+          letter-spacing: 1px; }
+        .landing-appartments_row a .appartment_text p {
+          margin: 0;
+          line-height: 1.1;
+          letter-spacing: 1px; }
 
 /* ==========================================================================
   LANDING TESTIMONIAL STYLING
 ========================================================================== */
 .landing-testimonials {
   width: 100%;
-  background-color: #009900;
-  margin: 0;
-  padding: 10vh 0; }
+  margin: 10vh 0 1vh 0;
+  position: relative; }
+  .landing-testimonials video {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    z-index: 9; }
   .landing-testimonials_row {
-    width: 35%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
     .landing-testimonials_row .testimonial {
       width: 100%;
-      height: 150px;
-      background-color: white; }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 7.5px 20px 7.5px 5px;
+      background-color: rgba(255, 255, 255, 0.7); }
+      .landing-testimonials_row .testimonial_col-1 {
+        width: 17.5%;
+        align-self: center; }
+        .landing-testimonials_row .testimonial_col-1 img {
+          width: 145px;
+          height: 145px;
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto;
+          opacity: 1; }
+      .landing-testimonials_row .testimonial_col-2 {
+        width: 80%; }
+        .landing-testimonials_row .testimonial_col-2 h2 {
+          margin: 10px 0 10px 0; }
+          .landing-testimonials_row .testimonial_col-2 h2 small {
+            font-size: .7rem;
+            font-weight: 400; }
+        .landing-testimonials_row .testimonial_col-2 p {
+          line-height: 1.9;
+          letter-spacing: 1px;
+          text-align: justify; }
       .landing-testimonials_row .testimonial:not(:last-child) {
-        margin: 0 0 30px 0; }
+        margin: 0 0 40px 0; }
 
 /* ==========================================================================
   FOOTER STYLING
 ========================================================================== */
 footer {
   width: 100%;
-  margin: 2.5vh 0;
+  margin: 2vh 0 2.5vh 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-end; }
