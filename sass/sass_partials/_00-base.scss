@@ -81,6 +81,7 @@ body {
   }
 
   @include respond(tablet) {
+    padding: 0;
   }
 
   @include respond(phone) {

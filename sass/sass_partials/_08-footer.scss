@@ -11,6 +11,11 @@ footer {
   flex-direction: row;
   justify-content: flex-end;
 
+  @include respond(tablet) {
+    width: 95%;
+    margin: 2vh 2.5vw 2.5vh 2.5vw;
+  }
+
   & nav {
 
     & ul {

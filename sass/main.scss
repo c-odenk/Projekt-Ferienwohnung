@@ -6,16 +6,24 @@
 
 @import "sass_partials/00-base";
 
-@import "sass_partials/01-header";
+/* ################################################## */
 
-@import "sass_partials/02-wallpaper";
+@import "sass_partials/01-landing-header";
+@import "sass_partials/01-landing-wallpaper";
+@import "sass_partials/01-landing-info";
+@import "sass_partials/01-landing-service";
+@import "sass_partials/01-landing-appartments";
+@import "sass_partials/01-landing-testimonial";
 
-@import "sass_partials/03-landing-info";
+/* ################################################## */
 
-@import "sass_partials/04-landing-service";
+@import "sass_partials/02-appartment-gallery";
+@import "sass_partials/02-appartment-content";
 
-@import "sass_partials/05-landing-appartments";
+/* ################################################## */
 
-@import "sass_partials/06-landing-testimonial";
+@import "sass_partials/00-impressum";
+
+/* ################################################## */
 
 @import "sass_partials/08-footer";
