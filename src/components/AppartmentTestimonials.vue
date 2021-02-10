@@ -19,7 +19,7 @@
 
 <script>
 
-import backgroundVideo from '@/assets/video/Weinberg.mp4'
+// import backgroundVideo from '@/assets/video/Weinberg.mp4'
 import pictureAndrei   from '@/assets/images/Andrei.png'
 import pictureBenjamin from '@/assets/images/Benjamin.jpg'
 import pictureUnknown  from '@/assets/images/NoPicture.jpg'
@@ -28,7 +28,7 @@ export default {
   name: 'AppartmentTestimonials',
   data: function() {
     return {
-      backgroundVideo: backgroundVideo,
+      // backgroundVideo: backgroundVideo,
 
       testimonials: [
         {picture: pictureBenjamin, name: 'Benjamin', booked: '2017 über AirBnB',      text: 'Wir haben uns wirklich sehr wohl gefühlt. Die Wohnung war sehr sauber und freundlich. Fußläufig ist in wenigen Minuren wirklich alles zu erreichen. Ein freundlicher Kontakt zum Vermieter rundet das ganze ab. Immer wieder gerne.'},
@@ -48,6 +48,8 @@ export default {
   width: 100%;
   margin: 10vh 0 1vh 0;
   position: relative;
+
+  background-color: $color-elements-green;
 
   @include respond(phone) {
     margin: 2.5vh 0 2.5vh 0;
