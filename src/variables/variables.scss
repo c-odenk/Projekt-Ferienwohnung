@@ -1,0 +1,53 @@
+/* ==========================================================================
+  MEDIA QUERY MANAGER
+========================================================================== */
+
+/*
+**  Desktop first approach = Desktop Styling zuerst und dann Mobile Styling
+**  mit (max-width) Styling properties !!!
+*/
+
+$breakpoint-smartphone: 767px;
+$breakpoint-tablet:    1029px;
+
+@mixin respond($breakpoint)  {
+  @if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) { @content};
+    // MAX = 1029px
+  }
+  @if $breakpoint == phone {
+    @media (max-width: $breakpoint-smartphone) { @content};
+    // MAX = 767px;
+  }
+}
+
+
+/* ==========================================================================
+  COLOR VARIABLES
+========================================================================== */
+
+$color-body-background: #F8F8F8;
+$color-text-dark: #000;
+$color-elements-green: #00853E;
+
+
+/* ==========================================================================
+  FONTS
+========================================================================== */
+
+$font-family: 'Montserrat', sans-serif;
+$font-family2: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-size-h1-sm: 1.3rem;
+$font-size-h1-lg: 1.8rem;
+
+$font-size-h2-sm: 2rem;
+$font-size-h2-lg: 1.5rem;
+
+$font-size-p-sm: 1rem;
+$font-size-p-lg: 1.25rem;
+
+$line-height-p-sm: 1.5;
+$line-height-p-lg: 1.7;
+
+$letter-spacing: 1px;

@@ -1,0 +1,70 @@
+{
+  "elisabeth": {
+    "images": [
+      "https://cf.bstatic.com/images/hotel/max1024x768/134/134497022.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/149/149766532.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/134/134497023.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/134/134497014.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/134/134497016.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/134/134497012.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/149/149897839.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/149/149897833.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/134/134497015.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/134/134497013.jpg"
+    ],
+    "heading": [
+      "Ferienwohnung Elisabeth",
+      "Ravensbergerstr. 21a, 53474 Bad Neuenahr-Ahrweiler",
+      "2 Schlafzimmer",
+      "1 Badezimmer",
+      "max. 4 Personen"
+    ],
+    "furnishing": [
+      {"room": "Küche",        "furnishing": ["Küchenutensilien", "Herdplatte", "Backofen", "Kühlschrank", "Kaffeemaschine", "Wasserkocher", "Toaster", "Waschmaschine"]},
+      {"room": "Badezimmer",   "furnishing": ["Eigenes Badezimmer", "Zusätzliches WC", "Handtücher", "Toilettenpapier", "Föhn"]},
+      {"room": "Schlafzimmer", "furnishing": ["Boxspringbetten", "Bettwäsche", "Kleiderschrank", "Wäscheständer"]}
+    ],
+    "information": [
+      "Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Auf Ihren Besuch freuen wir uns!"
+    ],
+    "booking": [
+      {"price": 79},
+      {"fee": 29}
+    ]
+  },
+  "hedwig": {
+    "images": [
+      "https://a0.muscache.com/im/pictures/81d28d64-6ddd-43bf-9ef6-b4c70512e286.jpg?im_w=1200",
+      "https://cf.bstatic.com/images/hotel/max1024x768/113/113901092.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/113/113901095.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/113/113901084.jpg",
+      "https://cf.bstatic.com/images/hotel/max1024x768/150/150036453.jpg"
+    ],
+    "heading": [
+      "Ferienwohnung Hedwig",
+      "Ravensbergerstr. 21a, 53474 Bad Neuenahr-Ahrweiler",
+      "1 Schlafzimmer",
+      "1 Badezimmer",
+      "max. 2 Personen"
+    ],
+    "furnishing": [
+      {"room": "Küche",        "furnishing": ["Küchenutensilien", "Herdplatte", "Backofen", "Kühlschrank", "Kaffeemaschine", "Wasserkocher", "Toaster", "Waschmaschine"]},
+      {"room": "Badezimmer",   "furnishing": ["Eigenes Badezimmer", "Zusätzliches WC", "Handtücher", "Toilettenpapier", "Föhn"]},
+      {"room": "Schlafzimmer", "furnishing": ["Boxspringbetten", "Bettwäsche", "Kleiderschrank", "Wäscheständer"]}
+    ],
+    "information": [
+      "Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Auf Ihren Besuch freuen wir uns!"
+    ],
+    "booking": [
+      {"price": 59},
+      {"fee": 29}
+    ]
+  }
+
+}
